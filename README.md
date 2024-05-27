@@ -1,6 +1,7 @@
 # Fake-PPAFM-Generator
 Fake-PPAFM-Generator turns AFM to PPAFM style, which have the potential use in denoising experimental images.
 
+- `image_input`: To store the experimental AFM images to be translated to PPAFM style. 
 
 PS: Rename the name of trained model manually, if you want the model that translate from domain B to A you need to do:
 

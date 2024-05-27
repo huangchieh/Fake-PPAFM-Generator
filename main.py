@@ -35,8 +35,9 @@ if __name__ == '__main__':
     model.setup(opt)  # regular setup: load and print networks; create schedulers
 
     for i, data in enumerate(dataset):
-        print(data)
-        #print('Process image... %s' % data['B_paths'])
+        # Here A_paths is the path of input image, that is nothing to do with the type A. 
+        # Just a path. 
+        print('Process image... %s' % data['A_paths'])
         model.set_input(data)  # unpack data from data loader
         model.test()           # run inference
         

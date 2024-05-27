@@ -33,7 +33,7 @@
                 output_nc: 1                             	[default: 3]
                     phase: test                          
                preprocess: resize_and_crop               
-              results_dir: image_output/fakeB_lbd_10     	[default: ./results/]
+              results_dir: image_output/fakeA_lbd_10     	[default: ./results/]
            serial_batches: False                         
                    suffix:                               
                 use_wandb: False                         

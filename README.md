@@ -3,6 +3,8 @@ Fake-PPAFM-Generator turns AFM to PPAFM style, which have the potential use in d
 
 - `image_input`: To store the experimental AFM images to be translated to PPAFM style. 
 
+![](https://cdn.jsdelivr.net/gh/HuangJiaLian/DataBase0@master/uPic/2024-05-27-16-34-APrU9x.jpg)
+
 PS: Rename the name of trained model manually, if you want the model that translate from domain B to A you need to do:
 
 ```

@@ -2,20 +2,20 @@
              aspect_ratio: 1.0                           
                batch_size: 1                             
           checkpoints_dir: trained_models                	[default: ./checkpoints]
-                crop_size: 256                           
-                 dataroot: temp_input_20240524174226/testA	[default: None]
+                crop_size: 192                           	[default: 256]
+                 dataroot: image_input                   	[default: None]
              dataset_mode: single                        
                 direction: AtoB                          
           display_winsize: 256                           
                     epoch: latest                        
                      eval: False                         
-                  gpu_ids: 0,1,2,3                       	[default: 0]
+                  gpu_ids: 0                             
                 init_gain: 0.02                          
                 init_type: normal                        
                  input_nc: 1                             	[default: 3]
                   isTrain: False                         	[default: None]
                 load_iter: 0                             	[default: 0]
-                load_size: 256                           
+                load_size: 192                           	[default: 256]
          max_dataset_size: inf                           
                     model: test                          
              model_suffix:                               
@@ -33,7 +33,7 @@
                 output_nc: 1                             	[default: 3]
                     phase: test                          
                preprocess: resize_and_crop               
-              results_dir: Water-bilayer_FB_L100/Water-bilayer-K-9_val_3	[default: ./results/]
+              results_dir: image_output/fakeA_lbd_100    	[default: ./results/]
            serial_batches: False                         
                    suffix:                               
                 use_wandb: False                         

@@ -2,7 +2,7 @@
              aspect_ratio: 1.0                           
                batch_size: 1                             
           checkpoints_dir: trained_models                	[default: ./checkpoints]
-                crop_size: 256                           
+                crop_size: 192                           	[default: 256]
                  dataroot: image_input                   	[default: None]
              dataset_mode: single                        
                 direction: AtoB                          
@@ -15,7 +15,7 @@
                  input_nc: 1                             	[default: 3]
                   isTrain: False                         	[default: None]
                 load_iter: 0                             	[default: 0]
-                load_size: 256                           
+                load_size: 192                           	[default: 256]
          max_dataset_size: inf                           
                     model: test                          
              model_suffix:                               
@@ -33,7 +33,7 @@
                 output_nc: 1                             	[default: 3]
                     phase: test                          
                preprocess: resize_and_crop               
-              results_dir: image_output/fakeB_lbd_40     	[default: ./results/]
+              results_dir: image_output/fakeA_lbd_40     	[default: ./results/]
            serial_batches: False                         
                    suffix:                               
                 use_wandb: False                         

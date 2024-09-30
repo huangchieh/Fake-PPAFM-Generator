@@ -5,6 +5,7 @@ Fake-PPAFM-Generator turns AFM to PPAFM style, which have the potential use in d
 
 ![](https://cdn.jsdelivr.net/gh/HuangJiaLian/DataBase0@master/uPic/2024-05-27-16-34-APrU9x.jpg)
 
+![](https://cdn.jsdelivr.net/gh/HuangJiaLian/DataBase0@master/uPic/2024-09-30-12-08-ReverseTranslation.png)
 PS: Rename the name of trained model manually, if you want the model that translate from domain B to A you need to do:
 
 ```

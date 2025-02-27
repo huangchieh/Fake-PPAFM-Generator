@@ -4,8 +4,20 @@
 Fake-PPAFM-Generator turns AFM to PPAFM style, which have the potential use in preprocessing experimental images before feeding into the structure discovery machine learning models. This fake PPAFM generator is the inverse generator obtained from CycleGAN training. Using this inverse generator as the preprocessing step makes the structure discovery machine leaning model independent. Therefore, when only need to using PPAFM, the simulation AFM, to train our model without considering the real experimental AFM. 
 
 ## Usage
+1. Clone the repository with submodule:
+
+```bash
+git clone --recurse-submodules git@github.com:huangchieh/Fake-PPAFM-Generator.git
+```
+
+2. Images 
 Place the experimental AFM images in folder `image_input/testB`, then run the bash script `0_run.sh` on a GPU node. Then the fake PPAFM images would be generated in folder `image_output`. 
 
+3. API
+The `api.py` shows how to do the style translation to given numpy arrays. 
+```bash
+python api.py
+```
 
 ## Results
 ![](https://cdn.jsdelivr.net/gh/HuangJiaLian/DataBase0@master/uPic/2024-09-30-12-08-ReverseTranslation.png)

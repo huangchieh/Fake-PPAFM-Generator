@@ -71,11 +71,11 @@ if __name__ == "__main__":
     image = Image.open(image_path).convert("L")  
     image_array = np.array(image)
 
-    # Rescale pixel values to the range [0, 1]
-    real_B = image_array / 255.0
+    # Rescale pixel values to the range [-1, 1]: This range is expected by the CycleGAN model
+    real_B = (image_array / 255.0) * 2.0 - 1.0
     
     # Style Transfer
-    fake_A = afm2ppafm(real_B, hperameters=(20, 0.5)) # hperameters =  (Lambda1, Lambda2) 
+    fake_A = afm2ppafm(real_B, hperameters=(50, 0.5)) # hperameters =  (Lambda1, Lambda2) 
     
     # Visualize the input and output images
     visualize(real_B, fake_A)

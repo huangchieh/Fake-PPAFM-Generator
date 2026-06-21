@@ -174,7 +174,7 @@ if __name__ == "__main__":
     L1, L2 = 50, 0.5
     # Load the image as a grayscale NumPy array
     image_path = "image_input/exp_data/"  # Change this if needed
-    samples = ['Ying_Jiang_1.npz', 'Ying_Jiang_2_1.npz', 'Ying_Jiang_2_2.npz', 'Ying_Jiang_3.npz', 'Ying_Jiang_5.npz', 'Ying_Jiang_6.npz']
+    samples = ['Ying_Jiang_1.npz', 'Ying_Jiang_2_1.npz', 'Ying_Jiang_2_2.npz', 'Ying_Jiang_3.npz', 'Ying_Jiang_4.npz', 'Ying_Jiang_5.npz', 'Ying_Jiang_6.npz', 'Ying_Jiang_7.npz']
     combo_dir_name = f"L1_{L1}_L2_{L2}"
     output_path = os.path.join("results", combo_dir_name)
     os.makedirs(output_path, exist_ok=True)
